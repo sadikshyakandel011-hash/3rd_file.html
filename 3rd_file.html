@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <style>
+        /* Basic styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        .main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .page {
+            display: none;
+        }
+
+        .page:target {
+            display: block;
+        }
+
+        /* Show home by default */
+        #home {
+            display: block;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            display: block;
+            margin: 10px auto;
+            width: 200px;
+            padding: 5px;
+        }
+
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="#information">Information</a>
+    </nav>
+
+    <main class="main">
+        <div id="home" class="page">
+            <h1>Welcome to My Website</h1>
+            <p>This is the home page. Click the menu above to see other pages.</p>
+            <p>Hello! This website is made for learning.</p>
+        </div>
+
+        <div id="gallery" class="page">
+            <h1>Gallery</h1>
+            <p>Look at these pictures.</p>
+            <div class="gallery">
+                <img src="IMG-20250323-WA0005.jpg" alt="Picture 1">
+                <img src="Messenger_creation_FC27CBC0-0DE3-476F-A592-54F82092B3F6.jpg" alt="Picture 2"><p>The root of joy is gratefulness</p>
+               
+            </div>
+        </div>
+
+        <div id="contact" class="page">
+            <h1>Contact Us</h1>
+            <p>Send us a message.</p>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" rows="3" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <div id="information" class="page">
+            <h1>Information</h1>
+            <p><ul>Be grateful</ul>
+            </p>
+            <h2>About me:</h2>
+            <p>My name is Sadikshya Kandel.I am from Pokhara.I am a student.</p>
+            <h2>My hobbies</h2>
+            <p><ul>Reading books</ul>
+            <ul>Playing badminton</ul>
+            <ul>Listening Music</ul></p>
+        </div>
+    </main>
+
+    
+</body>
+</html>
